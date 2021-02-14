@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="${title}"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<header>
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+        <h4 class="my-2 mr-md-auto font-weight-large">RiRo</h4>
+        <nav class="my-2 my-md-0 mr-md-3">
+            <a class="p-2 text-dark" href="/">Главная</a>
+            <a class="p-2 text-dark" href="/about">О нас</a>
+            <a class="p-2 text-dark" href="/blog">Отзывы</a>
+            <a class="p-2 text-dark" href="/blog/add">Добавить отзыв</a>
+            <a class="btn btn-outline-primary" href="/login">Sign up</a>
+        </nav>
+    </div>
+</header>
+<div class="container mt-5">
+    <h1 style="margin: 40px">Новости</h1>
+    <body text="blue">
+    <h2 align="center" style="margin: 40px">Детское протезирование</h2>
+    <form>
+        <center><img src="https://image.freepik.com/free-photo/white-background-3d-hand-gesture-3d-rendering-3d-illustration_158469-2438.jpg" width="1000" height="600"></center>
+        <h4 align="center" style="margin: 20px">Добро пожаловать на сайт для детского протезирования</h4>
+        <h5 align="center" style="margin: 20px">Здесь вы найдете много интересного, новости о науке и технике и о развитии стартапа <strong>RiRo!</strong></h5>
+        <p style="margin-top: 20px"><strong>RiRo</strong> является соверменным проектом команды МГТУ "СТАНКИН" и РТУ МИРЭА, участниками которой являются студенты старших курсов бакалавриата и магистратуры. Данная команда разработала решение многих проблем современных протезов.</p>
+        <p style="margin-top: 10px">На вход программы подаются возраст, пол и рост ребенка. Далее данные обрабатываются разработанным алгоритмом, и на выходе выводится перечень параметров, являющихся основой для параметризации. В уже созданную 3D-модель вводятся полученные данные, и модель, соответственно, меняется, “подстраиваясь” под конкретного клиента. При моделировании применяется технология генеративного дизайна для облегчения протеза и придания ему большей прочности. Основные компоненты протеза являются самостоятельными деталями, которые можно “наращивать” по мере роста ребенка. Протез печатается на 3D-принтере, детали наращиваются допечатыванием на нем же. При помощи данной программы и модели можно создавать индивидуализированные, приближенные к реальным размерам, протезы рук в тех случаях, когд обе руки отсутствуют. Более того, данная программа позволяет прогнозировать рост кисти и предплечья, значительно упрощая процесс моделирования корпуса протеза.</p>
+        <center><h5 style="margin-top: 10px">Проблемы существующих протезов:</h5></center>
+        </p>
+    </form>
+    <form>
+        <center style="margin: 40px"> <img src="https://sun9-9.userapi.com/impg/ehjH5U_i7rfGjjv_ZidIXyuXej2a_mjjgl50Tw/SqV62n8cp_U.jpg?size=1527x773&quality=96&proxy=1&sign=131854bebb1d610b3f1f5b63cf815110&type=album" width="1000" height="500"></center>
+        <center><h5>Решение <strong>RiRo</strong>:</h5></center>
+        <center style="margin: 10px"><img src="https://sun9-35.userapi.com/impg/nzLGvh-BmlUlkTcYRIw_e6otoUoDGu6HezKtVQ/kaLgEnm3t5g.jpg?size=1331x773&quality=96&proxy=1&sign=5e766f8cc70e285bf90bb384c1cc4298&type=album" width="1000" height="500"></center>
+    </form>
+    </body>
+    <footer th:insert="Blocks/footer :: footer"><footer/>
+</body>
+</html>

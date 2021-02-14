@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Блог сайта</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<header th:insert="Blocks/header :: header">
+</header>
+<div class="container mt-5">
+    <h1 style="margin: 40px">О нас</h1>
+    <h2 align="center" style="margin: 40px">Команда разработчиков</h2>
+    <div class="row" style="margin: 40px">
+        <div class="col-6 col-md" style="margin-top: 40px">
+            <h5 style="margin-left: 20px">Островская Маргарита</h5>
+            <p style="margin: 10px"></p>
+            <h6 style="margin-left: 65px">МГТУ "СТАНКИН"</h6>
+            <p style="margin: 20px"></p>
+            <ul class="list-unstyled text-small">
+                <li><img src="https://sun9-63.userapi.com/impg/y4kp1_rARy--bzqbhvMlEptH8CpxCq-ZRibBrw/mj6O16N_cn0.jpg?size=260x260&quality=96&proxy=1&sign=3f8ad3e77c9962deac2a9bdd57a270eb&type=album" width="260" height="260"></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md" style="margin-top: 40px">
+            <h5 style="margin-left: 50px">Абасалиев Эльдар</h5>
+            <p style="margin: 10px"></p>
+            <h6 style="margin-left: 75px">МГТУ "СТАНКИН"</h6>
+            <p style="margin: 20px"></p>
+            <ul class="list-unstyled text-small">
+                <li><img src="https://sun9-12.userapi.com/impg/YUfC14ziil2jLn1n2xYDFMjlcvIpYrncSZjKvQ/KkeiXKJlyfs.jpg?size=261x264&quality=96&proxy=1&sign=3351a3fc042752e8f4fcc9f9fc8f4b6d&type=album" width="263" height="263"></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md" style="margin-top: 40px">
+            <h5 style="margin-left: 40px">Иванищев Кирилл</h5>
+            <p style="margin: 10px"></p>
+            <h6 style="margin-left: 85px">РТУ МИРЭА</h6>
+            <p style="margin: 20px"></p>
+            <ul class="list-unstyled text-small">
+                <li><img src="https://sun9-63.userapi.com/impf/mY28zGUmpKFWp4Luc_7pWjRKbgkSerPK82ie6w/c8_1avcx8RM.jpg?size=1122x1122&quality=96&proxy=1&sign=bd278c1d1a38f1dc343dc3942e91c217&type=album" width="263" height="263"></li>
+            </ul>
+        </div>
+    </div>
+    <footer th:insert="Blocks/footer :: footer"><footer/>
+</body>
+</html>
